@@ -122,10 +122,30 @@ a:hover {
   color: var(--primary-color);
 }
 
-.kittyimg {
+.img-container {
   position: relative;
+}
+.kittyimg {
   height: 200px;
   margin: auto;
+}
+.chat {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+.kittyimg:hover + .chat {
+  display: block;
+}
+.chat p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.chatimg {
+  width: 100px;
 }
 
 .button {
